@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Tạo mới Blog</title>
+</head>
+<body>
+    <div class="container" style="float:left; width:48%;">
+        <h1>tạo nội dung blog</h1>
+        <div class="textarea-group">
+            <label>tên blog</label>
+            <input id="title"></input>
+            <button onclick="rerender()" id="send-button">Ok</button>
+        </div>
+        <div class="textarea-group">
+            <label>tiêu đề</label>
+            <input id="message"></input>
+            <button onclick="tieude()" id="send-button">Up</button>
+        </div>
+        <div class="textarea-group">
+            <label>đề mục</label>
+            <input id="message"></input>
+            <button onclick="demuc()" id="send-button">Up</button>
+        </div>
+        <div class="textarea-group">
+            <label>nội dung</label>
+            <textarea rows="5" id="message"></textarea>
+            <button onclick="noidung()" id="send-button">Up</button>
+        </div>  
+        <div class="textarea-group">
+            <label>ảnh</label>
+            <input type="file" id="image" accept="images/*">
+            <button id="send-button" type="button" onclick="upload()">Up</button>
+        </div>
+        <div class="textarea-group">
+            <label>link</label>
+            <input id="message"></input>
+            <button onclick="link()" id="send-button">Up</button1>
+        </div>
+    </div>
+    <div class="preview" style="float:left; width:49%;">
+        <h1>xem trước Blog</h1>
+        <table>
+            <tbody>
+                <div id="posts"></div>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js"></script> -->
+<script src="link.js"></script>
+<script src="app.js"></script>
